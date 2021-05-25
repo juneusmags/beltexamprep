@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+<body>
+    <div class='topbar'>
+        <h1>Add New Recipe</h1>
+        <a href = "/">Dashboard</a>
+        <a href = "/logout">Logout</a>
+    </div>
+    <form action = "/createrecipe" method = "POST">
+        <label>Name: </label>
+        <input type="text" name="name">
+        <br>
+        <label>Description: </label>
+        <input type="text" name="description">
+        <br>
+        <label>Instructions: </label>
+        <input type="text" name="instructions">
+        <label>Under 30 minutes to prepare?</label>
+        <input type = "radio" name = "under" value= 1 >Yes</input>
+        <input type = "radio" name = "under" value= 0 >No</input>
+        <input type = "submit" value="Create">
+    </form>
+    
+</body>
+</html>

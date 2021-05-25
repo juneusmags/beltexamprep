@@ -1,0 +1,7 @@
+*{
+    font-family: Balsamiq Sans;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}

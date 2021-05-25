@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cs/edit.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Edit Recipe</h1>
+    <div>
+        <form action = "/update/{{recipe['id']}}" method = "POST">
+            <label>Name : </label>
+            <input type= "text" name="name" value = "{{recipe['name']}}">
+            <br>
+            <label>Description : </label>
+            <input type= "text" name="description" value = "{{recipe['description']}}">
+            <br>
+            <label>Instructions : </label>
+            <input type= "text" name="instructions" value = "{{recipe['instructions']}}">
+            <br>
+            <label>Under 30 minutes to prepare?</label>
+            <input type = "radio" name = "under" value = 1> Yes</input>
+            <input type = "radio" name = "under" value = 0> No</input>
+            <input type ="submit" value = "Update">
+    
+        </form>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cs/instructions.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>{{recipe[0]["name"]}}</h1>
+    <div>
+        <p>Description: </p><p>{{recipe[0]["description"]}}</p>
+        <p>Under 30 minutes: </p><p>{{recipe[0]["under"]}}</p>
+        <p>Instructions: </p><p>{{recipe[0]["instructions"]}}</p>
+    </div>
+</body>
+</html>
